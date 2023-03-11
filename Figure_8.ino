@@ -3,18 +3,12 @@
 Servo myservo1; //establishes left servo
 Servo myservo2; // establishes right servo
 
-
-
-
-
-
 void turn_left(){
   //This function will set the Arduino on its intial trajectory.
 
   myservo1.writeMicroseconds(1400);
   myservo2.writeMicroseconds(1300);
   delay(500);
- 
   
 }
 
@@ -32,7 +26,6 @@ void sweep_right(){
   delay(5000);
 }
  
-
 void sweep_left(){
   myservo1.writeMicroseconds(1745);
   myservo2.writeMicroseconds(1050);
