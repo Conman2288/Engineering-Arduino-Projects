@@ -1,23 +1,14 @@
 #include <Servo.h>
-
 Servo myservo1; //establishes left servo
 Servo myservo2; // establishes right servo
-
-
-
-
-
 
 void turn_left(){
   //This function will set the Arduino on its intial trajectory.
 
   myservo1.writeMicroseconds(1400);
   myservo2.writeMicroseconds(1300);
-  delay(500);
- 
-  
+  delay(500);  
 }
-
 
 void sweep_right(){
   //This function will move the Arduino in a rightward sweeping motion for its initial loop.
@@ -26,7 +17,6 @@ void sweep_right(){
   delay(4750);
 }
  
-
 void sweep_left(){
   //This function will move the Arduino in a leftward sweeping motion for its second loop.
   myservo1.writeMicroseconds(1720);
@@ -35,7 +25,6 @@ void sweep_left(){
 }
 
 void setup() {
- 
  pinMode(10, INPUT);
  myservo1.attach(11);
  myservo2.attach(12); 
